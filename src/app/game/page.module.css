@@ -1,0 +1,109 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  font-family: Montserrat, Roboto, sans-serif;
+  background-image: url("../../../public/background.jpg");
+  background-position: right top;
+}
+
+.header_container {
+  align-self: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button_container {
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  color: white;
+  border: 1px solid white;
+  min-width: 100px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  padding: 0.5rem;
+  text-align: center;
+  max-height: 2.5rem;
+  background-color: black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button:hover {
+  color: black;
+  border: 1px solid black;
+  background: white;
+}
+
+.title {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 20px);
+  grid-template-rows: repeat(10, 20px);
+}
+
+.cell_checked {
+  height: 20px;
+  width: 20px;
+  color: white;
+  background-color: white;
+}
+
+.cell_unchecked {
+  height: 20px;
+  width: 20px;
+  color: white;
+  background-color: black;
+}
+
+.iterations {
+  display: flex;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  background-color: gray;
+}
+
+.iterations_text {
+  align-self: center;
+  font-size: 1em;
+  padding: 0.5rem;
+  max-height: 2.5rem;
+  min-width: 50px;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 4rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("../../../public/background.jpg");
+  background-size: cover;
+}

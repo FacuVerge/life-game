@@ -1,0 +1,13 @@
+.title_big {
+  align-self: flex-start;
+  font-size: 5rem;
+  line-height: 0.7em;
+  font-weight: lighter;
+}
+
+.title {
+  align-self: flex-start;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  font-weight: lighter;
+}
